@@ -17,12 +17,12 @@ import PublicDashboard from "./pages/PublicDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
 import OfficerDashboard from "./pages/OfficerDashboard";
 import CitizenDashboard from "./pages/CitizenDashboard";
+import Landing from "./pages/Landing";
 
 // Components
 import ChatBot from "@/components/ChatBot";
 
 // Code-split all pages — only load what's needed
-const Landing = lazy(() => import("./pages/Landing"));
 const Profile = lazy(() => import("./pages/Profile"));
 const SubmitComplaint = lazy(() => import("./pages/SubmitComplaint"));
 const ComplaintDetail = lazy(() => import("./pages/ComplaintDetail"));

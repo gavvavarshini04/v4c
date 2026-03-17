@@ -5,7 +5,6 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import { useLanguage } from '@/i18n/LanguageContext';
 import heroImage from '@/assets/hero-city.jpg';
-import cinematicHero from 'C:/Users/prasa/.gemini/antigravity/brain/03604329-3c1d-4b2a-ae4d-2097095435b4/cinematic_smart_city_hero_1773157266358.png';
 
 export default function Landing() {
   const { t } = useLanguage();
@@ -35,7 +34,7 @@ export default function Landing() {
           style={{ y: y1 }}
           className="absolute inset-0 z-0"
         >
-          <img src={cinematicHero} alt="Smart city" className="h-full w-full object-cover scale-105" />
+          <img src={heroImage} alt="Smart city" className="h-full w-full object-cover scale-105" />
           <div className="absolute inset-0 bg-slate-950/40 backdrop-blur-[2px]" />
           <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent" />
         </motion.div>
@@ -152,7 +151,7 @@ export default function Landing() {
           className="mx-auto max-w-6xl rounded-[3rem] bg-slate-950 p-16 text-center text-white relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
-            <img src={cinematicHero} alt="" className="h-full w-full object-cover grayscale" />
+            <img src={heroImage} alt="" className="h-full w-full object-cover grayscale" />
           </div>
           <div className="relative z-10 max-w-2xl mx-auto">
             <p className="mb-6 text-[10px] font-bold uppercase tracking-[0.3em] text-white/40">{t('landing_cta_soon')}</p>
